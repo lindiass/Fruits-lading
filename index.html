@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits</title>
+    <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style1.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+</head>
+<body>
+    <section>
+        <div class="bg"></div>
+        <header>
+            <a href="#" class="logo">Fruits</a>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Eat Fresh Fruits<br>EveryDay</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quia dolore expedita corporis maxime? Magnam illum, nemo 
+                    placeat ab enim laboriosam velit aspernatur doloribus reprehenderit, 
+                    accusantium vero sit beatae quibusdam repellendus.
+                </p>
+                <button class="grow_skew_backward">Learn More</button>
+            </div>
+            <div class="imgBox">
+                <img src="img/3.png" alt="" class="fruits">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li data-text="1"><img src="img/1.png" alt="" onclick="slider('img/1.png');changeColor('#84993b')"></li>
+            <li data-text="2"><img src="img/2.png" alt="" onclick="slider('img/2.png');changeColor('#549926')"></li>
+            <li data-text="3"><img src="img/3.png" alt="" onclick="slider('img/3.png');changeColor('#df0023')"></li>
+            <li data-text="4"><img src="img/4.png" alt="" onclick="slider('img/4.png');changeColor('#faa51a')"></li>
+        </ul>
+        <div class="socialLink">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-telegram"></i></a>
+        </div>
+    </section>
+</body>
+</html>
+
+<script>
+    function slider(somthing){
+        document.querySelector('.fruits').src - somthing;
+    }
+    function changeColor(color){
+        const bg = document.querySelector('.bg');
+        bg.style.backgroundColor = color;
+    }
+</script>
